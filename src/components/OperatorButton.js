@@ -11,7 +11,7 @@ const OperatorButton = props => {
 
   const { operator } = props;
   return (
-    <div className="operator-btn" onClick={operatorClick}>
+    <div className="keyboard operator-buttons operator" onClick={operatorClick}>
       {operator}
     </div>
   );

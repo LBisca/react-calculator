@@ -28,9 +28,15 @@ const Keyboard = () => {
     }
   }
 
+  function bixa() {
+    document.getElementById("first").value = "";
+    document.getElementById("actual").value = "";
+    document.getElementById("operator").value = "";
+  }
+
   return (
     <div className="keyboard">
-      <div id="buttons" className="number-buttons">
+      <div id="buttons" className="keyboard number-buttons">
         <Button number="0" />
         <Button number="1" />
         <Button number="2" />
@@ -43,12 +49,15 @@ const Keyboard = () => {
         <Button number="9" />
       </div>
 
-      <div className="operator-buttons">
+      <div className="keyboard operator-buttons">
+        <div className="keyboard operator-buttons operator" onClick={bixa}>
+          CC
+        </div>
         <OperatorButton operator="+" />
         <OperatorButton operator="-" />
         <OperatorButton operator="*" />
         <OperatorButton operator="/" />
-        <div className="operator-btn" onClick={calculate}>
+        <div className="keyboard operator-buttons operator" onClick={calculate}>
           =
         </div>
       </div>

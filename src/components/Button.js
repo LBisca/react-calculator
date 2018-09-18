@@ -7,7 +7,7 @@ const Button = props => {
 
   const { number } = props;
   return (
-    <div className="number-btn" onClick={onButtonClick}>
+    <div className="keyboard number-buttons number" onClick={onButtonClick}>
       {number}
     </div>
   );
